@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+.str-chat,
+.str-chat__channel,
+.str-chat__container,
+.str-chat__main-panel,
+.str-video {
+  height: 100%;
+  min-height: 0;
+}
+
+.str-chat__main-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.str-chat__container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.str-chat__list {
+  background-color: #ffffff;
+  padding: 12px;
+}
+
+.str-chat__list-notifications {
+  display: none;
+}
+
+.str-chat__message-input {
+  border-top: 1px solid #ddd;
+}
